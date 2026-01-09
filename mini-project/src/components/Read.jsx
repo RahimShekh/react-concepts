@@ -1,5 +1,5 @@
 import React from "react";
-
+import { toast } from "react-toastify";
 function Read(props) {
     const{todos,setTodos} = props;
 
@@ -7,6 +7,7 @@ function Read(props) {
     // console.log("delete pressed");
     const filterTodo = todos.filter((todo) => todo.id != id)  // not equal tab tak chalega equal equal hua toh remove
     setTodos(filterTodo)
+    toast.error("todo deleted")
   }  
 
   const renderTodos = todos.map((todo) => {

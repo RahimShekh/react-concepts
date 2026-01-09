@@ -3,7 +3,7 @@ import Two from './components/Two'
 import Create from './components/Create';
 import Read from './components/Read';
 
-
+// we use react form in industry
 function App () {
    const [todos, setTodos] = useState([
    { id: 1, title: "work need to do", isCompleted: false },

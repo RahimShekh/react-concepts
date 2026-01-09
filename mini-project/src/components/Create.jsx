@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { nanoid } from 'nanoid'
+import {toast} from "react-toastify";
 
 function Create(props) {
     
@@ -21,7 +22,8 @@ function Create(props) {
     setTodos(copyTodos); // adding new todo with old todos
 
     //setTodos([...todos,newtodo])  //easy way to write
-
+    toast.success("todo created");
+    
     setTitle(""); // input bar ko khali karega
   };
   // console.log(todos)
