@@ -1,7 +1,7 @@
 import React from 'react'
 
 // react dont even know that we changed value of name 
-// so we need to tell react to re render in this case use useState
+// so we need to tell react to re render in this case by using useState
 function State() {
   let name = "rahim";
   
